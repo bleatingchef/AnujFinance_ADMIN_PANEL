@@ -5,15 +5,6 @@ import { toast } from 'react-toastify'; // Import toast for notifications
 const Students = () => {
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    // const [newStudent, setNewStudent] = useState({
-    //     rollno: '',
-    //     name: '',
-    //     education: '',
-    //     mobile: '',
-    //     email: '',
-    //     admissionDate: '',
-    // });
-    // const [showForm, setShowForm] = useState(false);
     const [error, setError] = useState('');
 
     const studentsPerPage = 10;
@@ -59,7 +50,7 @@ const Students = () => {
     return (
         <div className='bg-'>
             <div className="text-center bg-gradient-to-r from-purple-800 to-blue-800 mx-auto pl-40 pt-8">
-                <h1 className='inline-block text-blue-500 text-3xl md:text-7xl'>Eligibility</h1>
+                <h1 className='inline-block text-blue-500 text-3xl md:text-7xl'>Booked Demo</h1>
             </div>
             <div className="flex bg-gradient-to-r from-purple-800 to-blue-800 justify-center items-center min-h-screen">
                 <div className="container mx-auto p-10" style={{ marginLeft: '320px' }}>

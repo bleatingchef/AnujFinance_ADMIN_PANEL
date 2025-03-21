@@ -8,9 +8,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import AdminProfile from './Components/AdminProfile';
 import Dashboard from './Components/Dashboard';
 import './index.css';
-import Cases from './Components/Cases';
-import Attorneys from './Components/Applications';
-import User from './Components/User';
+// import Cases from './Components/Cases';
+// import Attorneys from './Components/Applications';
+// import User from './Components/User';
 import SignedUP from './Components/SignedUP';
 // import AddStudentForm from './Components/AddStudentForm';
 
@@ -35,13 +35,13 @@ const App = () => {
         <Route path='/logout' element={<Login />} />
         <Route element={auth ? <Layout /> : <Navigate to='/login' />}>
           <Route path='/' element={<Dashboard/>} />
-          <Route path='/User' element={<User/>} />
+          {/* <Route path='/User' element={<User/>} /> */}
           <Route path='/profile' element={<AdminProfile/>}/>
           <Route path='/home' element={<Dashboard/>}/>
-          <Route path='/attorneys' element={<Attorneys/>}/>
+          {/* <Route path='/attorneys' element={<Attorneys/>}/> */}
           <Route path='/signup' element={<SignedUP/>}/>
           {/* <Route path='/appointments' element={<AddStudentForm/>}/> */}
-          <Route path='/cases' element={<Cases/>}/>
+          {/* <Route path='/cases' element={<Cases/>}/> */}
 
         </Route>
       </Routes>

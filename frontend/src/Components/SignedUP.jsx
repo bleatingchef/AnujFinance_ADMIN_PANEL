@@ -22,7 +22,7 @@ const SignedUP = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center pl-52 bg-gradient-to-r from-purple-800 to-blue-800">
-      <h1 className="text-5xl text-center text-blue-200 mb-8">Signed Up</h1>
+      <h1 className="text-5xl text-center text-blue-200 mb-8">Transformed</h1>
       <div className="overflow-x-auto rounded-xl " style={{width:"1200px"}}>
         {loading ? (
           <div className="text-blue-200 text-center">Loading...</div>

@@ -86,26 +86,21 @@ const Navbar = () => {
           {/* Eligibility */}
           <li className="flex items-center pl-2 rounded-xl hover:shadow-lg hover:shadow-cyan-500 py-3 cursor-pointer" onClick={() => { navigate('/cases'); toggleSidebar(); }}>
             <FaFolder className="h-6 w-6 mr-2 text-white" />
-            {sidebarExpanded && <span className='text-white'>Eligibility</span>}
+            {sidebarExpanded && <span className='text-white'>Booked Demo</span>}
           </li>
 
           {/* Signed Up Users */}
           <li className="flex items-center pl-2 rounded-xl hover:shadow-lg hover:shadow-cyan-500 py-3 cursor-pointer" onClick={() => { navigateToAppointments(); toggleSidebar(); }}>
             <FiCalendar className="h-6 w-6 mr-2 text-white" />
-            {sidebarExpanded && <span className='text-white'>Signed Up Users</span>}
+            {sidebarExpanded && <span className='text-white'>Transformed</span>}
           </li>
 
           {/* Loan Application */}
           <li className="flex items-center pl-2 rounded-xl hover:shadow-lg hover:shadow-cyan-500 py-3 cursor-pointer " onClick={() => { navigateToMembership(); toggleSidebar(); }}>
             <FaGavel className="h-6 w-6 mr-2 text-white" />
-            {sidebarExpanded && <span className='text-white'>Loan Application</span>}
+            {sidebarExpanded && <span className='text-white'>Faqs</span>}
           </li>
-
-          {/* Enquiry */}
-          <li className="flex items-center pl-2 rounded-xl hover:shadow-lg hover:shadow-cyan-500 py-3 cursor-pointer " onClick={() => { navigateToUser(); toggleSidebar(); }}>
-            <FiUsers className="h-6 w-6 mr-2 text-white" />
-            {sidebarExpanded && <span className='text-white'>Enquiry</span>}
-          </li>
+          
         </ul>
       </div>
     </div>

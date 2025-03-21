@@ -6,30 +6,4 @@ body{
     background-color:white;
     overflow-x: hidden;
 }
-/* @import 'tailwindcss/tailwind.css'; */
 
-.rbc-calendar {
-  @apply bg-slate-950 text-white;
-}
-
-.rbc-event {
-  @apply bg-slate-950 text-white;
-}
-
-.rbc-toolbar button {
-  @apply bg-slate-950 text-yellow-200;
-}
-
-.rbc-toolbar button:active,
-.rbc-toolbar button:hover {
-  @apply bg-white;
-}
-
-.rbc-toolbar label {
-  @apply text-white;
-}
-
-.rbc-off-range {
-    
-  color: red !important; /* Change gray dates to red */
-}

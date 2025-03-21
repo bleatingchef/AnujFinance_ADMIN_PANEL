@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import bg from '../assets/loginhero.png';
+import bg from '../assets/loginhero.jpg';
 import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -46,11 +46,11 @@ const Login = () => {
     <>
       {/* <ToastContainer/> */}
       <div className="min-h-screen flex items-center justify-end pr-48 md:justify-end md:pl-80 relative bg-cover bg-center bg-opacity-80" style={{ backgroundImage: `url(${bg})` }}>
-        <div className="bg-gray-300 p-8 md:p-20 bg-opacity-70 rounded-3xl border-2 border-blue-800 shadow-2xl shadow-slate-950 max-w-md w-full z-10 relative">
+        <div className="bg-gray-300 p-8 md:p-20 bg-opacity-70 rounded-3xl border-2 border-pink-800 shadow-2xl shadow-slate-950 max-w-md w-full z-10 relative">
           <img src={logo} className='pb-8 mx-auto' alt="" style={{ width: '150px', height: 'auto' }} />
           <form>
             <div className="mb-4">
-              <label className="block text-yellow-100 text-sm font-bold mb-2" htmlFor="email">
+              <label className="block text-pink-800 text-sm font-bold mb-2" htmlFor="email">
               </label>
               <input
                 className="shadow appearance-none border-2 border-black bg-gray-200 rounded-3xl w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
@@ -77,7 +77,7 @@ const Login = () => {
             </div>
             <div className="flex items-center justify-between">
               <button
-                className="bg-slate-950 hover:bg-white text-white hover:text-slate-950 mx-auto mb-5 font-bold py-2 px-10 rounded-3xl focus:outline-none focus:shadow-outline"
+                className="bg-pink-800 hover:bg-white text-white hover:text-slate-950 mx-auto mb-5 font-bold py-2 px-10 rounded-3xl focus:outline-none focus:shadow-outline"
                 type="button"
                 onClick={userLogin}
               >
@@ -85,7 +85,7 @@ const Login = () => {
               </button>
             </div>
             <a
-              className="block text-center font-bold text-sm text-slate-950"
+              className="block text-center font-bold text-sm text-pink-800"
               href="#"
             >
               Forgot Password?
